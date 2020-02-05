@@ -1,0 +1,163 @@
+body {
+  font-family: 'Geneva';
+  color: #5C5050;
+}
+
+label {
+  color: #9B9B9B;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.grid-content {
+  display: grid;
+  padding: 10px;
+}
+
+.checkbox {
+  grid-area: checkbox;
+  width: 30px;
+}
+
+.app-id {
+  grid-area: app-id;
+}
+
+.case-assignee {
+  grid-area: case-assignee;
+}
+
+.case-status {
+  grid-area: case-status;
+}
+
+.case-status__value {
+  text-transform: uppercase;
+  background-color: #6652A2;
+  color: #fff;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.application-type {
+  grid-area: application-type;
+}
+
+.products {
+  grid-area: products;
+}
+
+.submitted-on {
+  grid-area: submitted-on;
+}
+
+.effective-date {
+  grid-area: effective-date;
+}
+
+.application-status {
+  grid-area: application-status;
+}
+
+.application-status__value {
+  text-transform: uppercase;
+  background-color: #034FA8;
+  color: #fff;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.actions {
+  justify-self: end;
+  display: grid;
+  grid-area: actions;
+  align-items: center;
+  justify-items: center;
+  width: 30px;
+  height: 40px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: #9B9B9B;
+  border-radius: 50px;
+}
+
+.employer-name {
+  grid-area: employer-name;
+}
+
+.refresh {
+  justify-self: end;
+  grid-area: refresh;
+  color: #000;
+}
+
+@media (max-width: 749px) { 
+  .grid-header {
+    display: none;
+  }
+  .grid-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "checkbox app-id . actions"
+                          ". case-assignee . ."
+                          ". case-status products ."
+                          ". application-type . ."
+                          ". employer-name . ."
+                          ". submitted-on . ."
+                          ". effective-date application-status .";
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1023px) { 
+  .grid-header {
+    display: none;
+  }
+  .grid-content {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "checkbox app-id case-assignee case-status actions"
+                          ". products application-type employer-name . "
+                          ". application-status submitted-on effective-date .";
+  }
+}
+
+@media (min-width: 1024px) { 
+  body {
+    vertical-align: middle;
+  }
+
+  label {
+    display: none;
+  }
+
+  .grid-header {
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    align-items: center;
+    background-color: #EFF4f5;
+    color: #034FA8;
+    border: solid 1px #DADADA;
+    padding: 10px;
+    grid-template-areas: "checkbox app-id case-assignee case-status application-type products submitted-on effective-date application-status refresh";
+  }
+
+  .grid-content {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: "checkbox app-id case-assignee case-status application-type products submitted-on effective-date application-status actions";
+    align-items: center;
+    padding: 10px;
+  }
+
+  .employer-name {
+    display: none;
+  }
+}
