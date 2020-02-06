@@ -108,13 +108,13 @@ label {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
     row-gap: 20px;
-    grid-template-areas: "checkbox app-id . actions"
-                          ". case-assignee . ."
-                          ". case-status products ."
-                          ". application-type . ."
-                          ". employer-name . ."
-                          ". submitted-on . ."
-                          ". effective-date application-status .";
+    grid-template-areas:  "checkbox app-id           .                  actions"
+                          ".        case-assignee    .                  ."
+                          ".        case-status      products           ."
+                          ".        application-type .                  ."
+                          ".        employer-name    .                  ."
+                          ".        submitted-on     .                  ."
+                          ".        effective-date   application-status .";
   }
 }
 
@@ -126,9 +126,9 @@ label {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
-    grid-template-areas: "checkbox app-id case-assignee case-status actions"
-                          ". products application-type employer-name . "
-                          ". application-status submitted-on effective-date .";
+    grid-template-areas: "checkbox app-id             case-assignee    case-status    actions"
+                         ".        products           application-type employer-name  . "
+                         ".        application-status submitted-on     effective-date .";
   }
 }
 
