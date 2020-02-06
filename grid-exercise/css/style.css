@@ -3,9 +3,8 @@ body {
   color: #5C5050;
 }
 
-label {
+.label {
   color: #9B9B9B;
-  display: block;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
@@ -137,7 +136,7 @@ label {
     vertical-align: middle;
   }
 
-  label {
+  .label {
     display: none;
   }
 
