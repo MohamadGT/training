@@ -16,7 +16,6 @@ body {
 
 .checkbox {
   grid-area: checkbox;
-  width: 30px;
 }
 
 .app-id {
