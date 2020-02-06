@@ -7,6 +7,7 @@ label {
   color: #9B9B9B;
   display: block;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .grid-content {
@@ -149,6 +150,10 @@ label {
     border: solid 1px #DADADA;
     padding: 10px;
     grid-template-areas: "checkbox app-id case-assignee case-status application-type products submitted-on effective-date application-status refresh";
+  }
+
+  .grid-header > * {
+    text-transform: uppercase;
   }
 
   .grid-content {
