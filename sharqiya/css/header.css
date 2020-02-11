@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding-left: 42px;
+  padding-right: 42px;
+  background-color: #262261;
+}
+
+.header__logo {
+  width: 110px;
+  height: 42px;
+  background-image: url('/assets/sharqiya-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__left-bar {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__burger-menu-button {
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/burger-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__date {
+  margin-left: 22px;
+}
+
+.header__browse-event {
+  margin-left: 30px;
+}
+
+.header__location {
+  margin-left: 26px;
+  border-bottom: solid 1px #707070;
+}
+
+.header__right-bar {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__login {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 28px;
+  text-decoration: none;
+}
+
+.header__add-event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 36px;
+  background-color: #F8A62B;
+  border: solid 1px #95989A;
+  border-radius: 5px;
+  margin-right: 28px;
+}
+
+.header__language {
+  font-family: 'Adelle Sans ARA', sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header_font-family_montserrat {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
+}

@@ -1,0 +1,20 @@
+.link-to {
+  display: flex;
+  align-items: center;
+}
+
+.link-to__link-text {
+  color: #EB930F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.lint-to__arrow {
+  margin-left: 20px;
+  width: 6px;
+  height: 9px;
+  background-image: url('/assets/arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}

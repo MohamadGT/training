@@ -1,0 +1,76 @@
+.event-card {
+  display: grid;
+  width: 298px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, .16) 0px 3px;
+}
+
+.event-card__img {
+  height: 168px;
+}
+
+.event-card__data {
+  height: 161px;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.event-card__date {
+  color: #F8A62B;
+  font-size: 11px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+
+.event-card__title {
+  color: #404040;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.event-card__time {
+  display: flex;
+  margin-top: 5px;
+}
+
+.event-card__time-icon {
+  width: 10px;
+  height: 10px;
+  background-image: url('/assets/event-card-time-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.event-card__time-from-to {
+  margin-left: 5px;
+  color: #7B7B7B;
+  font-size: 13px;
+}
+
+.event-card__location {
+  display: flex;
+  margin-top: 5px;
+}
+
+.event-card__location-icon {
+  padding-left: 5px;
+  width: 8px;
+  height: 11px;
+  background-image: url('/assets/event-card-location-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.event-card__location-addr {
+  margin-left: 5px;
+  color: #7B7B7B;
+  font-size: 13px;
+}
+
+.event-card__event-types {
+  color: #9D9D9D;
+  font-size: 11px;
+  font-family: 'Montserrat';
+  margin-top: 15px;
+}

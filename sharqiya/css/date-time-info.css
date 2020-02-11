@@ -1,0 +1,15 @@
+.date-time-info {
+  display: grid;
+  padding: 5px 10px;
+}
+
+.date-time-info__date {
+  font-size: 14px;
+  color: #727272;
+  font-weight: bold;
+}
+
+.date-time-info__times {
+  font-size: 13px;
+  color: #727272;
+}

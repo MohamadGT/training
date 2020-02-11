@@ -1,0 +1,20 @@
+.related-events {
+  height: 475px;
+  width: 100%;
+  padding: 42px;
+  box-sizing: border-box;
+  background-color: #F0F0F0;
+  border-top: #E6E6E6 5px solid;
+}
+
+.related-event__title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.related-event__events {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}

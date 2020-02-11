@@ -1,0 +1,15 @@
+.sub-header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 44px;
+  border-bottom: 1px solid rgba(230, 230, 230, .4);
+}
+
+.sub-header__back-button {
+  width: 44px;
+  height: 14px;
+  background-image: url('/assets/back-button.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
