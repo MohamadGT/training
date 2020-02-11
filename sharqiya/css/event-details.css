@@ -2,12 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 34px;
+  max-width: 1282px;
+  margin: 0 auto;
 }
 
 .event-details__left {
   display: flex;
   flex-direction: column;
-  padding-left: 44px;
   padding-right: 28px;
   border-right: 1px solid #E6E6E6;
 }
@@ -125,7 +126,6 @@
 
 .event-details__right {
   padding-left: 28px;
-  padding-right: 44px;
 }
 
 .event-details__event-img {

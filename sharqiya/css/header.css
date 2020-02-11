@@ -1,10 +1,13 @@
 .header {
+  background-color: #262261;
+}
+
+.header__container {
   display: flex;
   align-items: center;
+  max-width: 1282px;
   height: 68px;
-  padding-left: 42px;
-  padding-right: 42px;
-  background-color: #262261;
+  margin: 0 auto;
 }
 
 .header__logo {

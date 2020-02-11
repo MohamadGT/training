@@ -1,5 +1,6 @@
 @import './base.css';
 @import './header.css';
+@import './calendar-tab.css';
 @import './sub-header.css';
 @import './date-icon.css';
 @import './date-time-info.css';
@@ -9,4 +10,5 @@
 @import './event-details.css';
 @import './event-card.css';
 @import './related-events.css';
+@import './events.css';
 @import './footer.css';
