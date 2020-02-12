@@ -3,6 +3,10 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+    entry: {
+        home: './src/index.js',
+        event: './src/event.js'
+    },
     module: {
         rules: [
             {
@@ -48,11 +52,11 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         }),
-        // new HtmlWebPackPlugin({
-        //     template: "./src/event.html",
-        //     filename: "./event.html",
-        //     chunks: ['app']
-        // }),
+        new HtmlWebPackPlugin({
+            template: "./src/event.html",
+            filename: "./event.html",
+            chunks: ['event']
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
