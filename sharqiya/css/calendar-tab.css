@@ -85,6 +85,22 @@
   cursor: pointer;
 }
 
+.calendar-tab__day-of-month_favorit {
+ position: relative; 
+}
+
+.calendar-tab__day-of-month_favorit::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #F8A62B;
+  transform: translateX(-50%);
+}
+
 .calendar-tab__search {
   padding-left: 18px;
   padding-right: 18px;

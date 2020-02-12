@@ -1,3 +1,82 @@
 .events {
-  
+  background-color: #F0F0F0;
 }
+
+.events__container {
+  max-width: 1282px;
+  margin: 0 auto;
+}
+
+.events__chips-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.events__chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  background-color: #fff;
+  color: #9E9995;
+  border-radius: 25px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.events__chip_everything {
+  background-color: #F8A62B;
+  color: #fff;
+}
+
+.events__chip-select {
+  width: 8px;
+  height: 5px;
+  background-image: url('/assets/select-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px 3px;
+}
+
+.events__founded-events {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #404040;
+  text-transform: uppercase;
+}
+
+.events__events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: space-between;
+  row-gap: 30px;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.events__see-more {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80px;
+}
+
+.events__see-more-chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  background-color: #fff;
+  color: #F8A62B;
+  border-radius: 25px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+
