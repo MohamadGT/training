@@ -88,3 +88,84 @@
   color: #fff;
   font-size: 12px;
 }
+
+@media (max-width: 749px) {
+  .header_is-hidden {
+    display: none;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    margin: 0 auto;
+    padding: 14px;
+    box-sizing: border-box;
+  }
+
+  .header__date {
+    display: none;
+  }
+
+  .header__browse-event {
+    display: none;
+  }
+
+  .header__location {
+    display: none;
+  }
+
+  .header__login {
+    display: none;
+  }
+
+  .header__add-event {
+    display: none;
+  }
+
+  .header__language {
+    display: none;
+  }
+
+  .header__location-icon {
+    width: 13px;
+    height: 19px;
+    background-image: url('/src/assets/location-icon-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+  }
+
+  .header__search-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('/src/assets/search-icon-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1023px) {
+  .header__container {
+    padding: 14px;
+    box-sizing: border-box;
+  }
+  
+  .header__location-icon {
+    display: none;
+  }
+
+  .header__search-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__location-icon {
+    display: none;
+  }
+
+  .header__search-icon {
+    display: none;
+  }
+}

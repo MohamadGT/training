@@ -13,6 +13,8 @@
   display: grid;
   grid-template-columns: repeat(24, 38px);
   align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .calendar-tab__left-arrow {
@@ -134,4 +136,19 @@
   color: #fff;
   font-family: 'Montserrat';
   opacity: .7;
+}
+
+@media (max-width: 749px) {
+  .calendar-tab__left-arrow,
+  .calendar-tab__right-arrow,
+  .calendar-tab__search {
+    display: none;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 1024px) {
 }

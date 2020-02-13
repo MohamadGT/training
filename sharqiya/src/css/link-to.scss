@@ -10,6 +10,14 @@
   text-decoration: none;
 }
 
+.link-to__link-short-text {
+  color: #EB930F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 .lint-to__arrow {
   margin-left: 20px;
   width: 6px;
@@ -17,4 +25,22 @@
   background-image: url('/src/assets/arrow.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (max-width: 749px) { 
+  .link-to__link-short-text {
+    display: block;
+  }
+  .link-to__link-text {
+    display: none;
+  }
+}
+
+@media (min-width: 750px) { 
+  .link-to__link-short-text {
+    display: none;
+  }
+  .link-to__link-text {
+    display: block;
+  }
 }

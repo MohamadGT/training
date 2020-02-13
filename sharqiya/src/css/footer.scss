@@ -38,3 +38,9 @@
   font-family: 'Montserrat';
   font-size: 12px;
 }
+
+@media (max-width: 749px) {
+ .footer {
+   display: none;
+ } 
+}
