@@ -5,14 +5,12 @@
 
 .link-to__link-text {
   color: #EB930F;
-  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   text-decoration: none;
 }
 
 .link-to__link-short-text {
   color: #EB930F;
-  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   text-decoration: none;
   text-transform: capitalize;
@@ -22,7 +20,7 @@
   margin-left: 20px;
   width: 6px;
   height: 9px;
-  background-image: url('/src/assets/arrow.png');
+  background-image: url('/src/assets/arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
 }

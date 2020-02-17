@@ -33,7 +33,7 @@
 .event-details__heart-button {
   width: 35px;
   height: 35px;
-  background-image: url('/src/assets/heart-button.png');
+  background-image: url('/src/assets/heart-button.svg');
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 10px;
@@ -42,7 +42,7 @@
 .event-details__share-button {
   width: 35px;
   height: 35px;
-  background-image: url('/src/assets/share.png');
+  background-image: url('/src/assets/share.svg');
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 10px;
@@ -68,7 +68,7 @@
   padding-left: 11px;
   width: 10px;
   height: 10px;
-  background-image: url('/src/assets/small-heart.png');
+  background-image: url('/src/assets/small-heart.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -96,7 +96,7 @@
 .event-details__location-icon {
   width: 10px;
   height: 10px;
-  background-image: url('/src/assets/location.png');
+  background-image: url('/src/assets/location.svg');
   background-repeat: no-repeat;
   background-position: center;
   padding-left: 11px;
@@ -128,9 +128,15 @@
 }
 
 .event-details__event-types {
-  font-size: 11px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.event-details__event-type {
+  margin-left: 10px;
   color: #F8A62B;
-  font-family: 'Montserrat';
+  font-size: 11px;
 }
 
 .event-details__event-text {
@@ -141,7 +147,6 @@
 .event-details__event-link {
   font-size: 11px;
   color: #F8A62B;
-  font-family: 'Montserrat';
 }
 
 .event-details__right {
@@ -208,7 +213,7 @@
   }
 
   .event-details__location-icon {
-    background-image: url('/src/assets/location-icon.png');
+    background-image: url('/src/assets/location-icon.svg');
   }
 }
 

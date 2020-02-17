@@ -21,34 +21,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat';
   font-size: 13px;
   background-color: #fff;
   color: #9E9995;
   border-radius: 25px;
-  text-transform: capitalize;
   padding: 10px 20px;
   margin: 0 5px;
-
+  text-decoration: none;
   flex-shrink: 0;
 }
 
-.events__chip_everything {
+.events__chip_highlighted {
   background-color: #F8A62B;
   color: #fff;
 }
 
-.events__chip-select {
-  width: 8px;
-  height: 5px;
-  background-image: url('/src/assets/select-icon.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 5px 3px;
+.events__chip_has-arrow {
+  position: relative;
+  &::after {
+    content: '';
+    background-image: url('/src/assets/select-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8px;
+    height: 5px;
+    padding: 5px 3px;
+  }
 }
 
 .events__founded-events {
-  font-family: 'Montserrat';
   font-size: 14px;
   color: #404040;
   text-transform: uppercase;
@@ -74,7 +75,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat';
   font-size: 13px;
   background-color: #fff;
   color: #F8A62B;

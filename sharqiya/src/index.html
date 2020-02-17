@@ -11,17 +11,17 @@
     <div class="header__container">
       <div class="header__left-bar">
         <div class="header__burger-menu-button"></div>
-        <div class="header__date header_font-family_montserrat">Today: AUG 09, 2016</div>
-        <div class="header__browse-event header_font-family_montserrat">browse event</div>
-        <div class="header__location header_font-family_montserrat">
-          <img src="/src/assets/location-icon.png" width="8px" height="11px" alt="">
+        <div class="header__date">Today: AUG 09, 2016</div>
+        <a class="header__browse-event">browse event</a>
+        <a class="header__location">
+          <img src="/src/assets/location-icon.svg" width="8px" height="11px" alt="">
           <span>eastern province</span>
-        </div>
+        </a>
       </div>
-      <div class="header__logo "></div>
+      <a class="header__logo "></a>
       <div class="header__right-bar">
         <a href="" class="header__login">login</a>
-        <div class="header__add-event header_font-family_montserrat">add event</div>
+        <button class="header__add-event">add event</button>
         <a href="" class="header__language">بالعربية</a>
         <div class="header__location-icon"></div>
         <div class="header__search-icon"></div>
@@ -72,7 +72,7 @@
           <div class="calendar-tab__day">09</div>
           <div class="calendar-tab__day-of-week">sun</div>
         </div>
-        <div class="calendar-tab__day-of-month calendar-tab__day-of-month_favorit">
+        <div class="calendar-tab__day-of-month calendar-tab__day-of-month_is-favorit">
           <div class="calendar-tab__day">10</div>
           <div class="calendar-tab__day-of-week">mon</div>
         </div>
@@ -80,7 +80,7 @@
           <div class="calendar-tab__day">11</div>
           <div class="calendar-tab__day-of-week">tue</div>
         </div>
-        <div class="calendar-tab__day-of-month calendar-tab__day-of-month_favorit">
+        <div class="calendar-tab__day-of-month calendar-tab__day-of-month_is-favorit">
           <div class="calendar-tab__day">12</div>
           <div class="calendar-tab__day-of-week">wed</div>
         </div>
@@ -92,7 +92,7 @@
           <div class="calendar-tab__day">14</div>
           <div class="calendar-tab__day-of-week">fri</div>
         </div>
-        <div class="calendar-tab__day-of-month calendar-tab__day-of-month_favorit">
+        <div class="calendar-tab__day-of-month calendar-tab__day-of-month_is-favorit">
           <div class="calendar-tab__day">15</div>
           <div class="calendar-tab__day-of-week">sat</div>
         </div>
@@ -131,17 +131,15 @@
   <div class="events">
     <div class="events__container">
       <div class="events__chips-bar">
-        <div class="events__chip events__chip_everything">everything</div>
-        <div class="events__chip">halloween special</div>
-        <div class="events__chip">arts & culture</div>
-        <div class="events__chip">conferences & workshops</div>
-        <div class="events__chip">exhibitions</div>
-        <div class="events__chip">sports & outdoor</div>
-        <div class="events__chip">food & drinks</div>
-        <div class="events__chip">nightlife</div>
-        <div class="events__chip">more
-          <div class="events__chip-select"></div>
-        </div>
+        <div class="events__chip events__chip_highlighted">everything</div>
+        <a class="events__chip">Halloween Special</a>
+        <a class="events__chip">Arts & Culture</a>
+        <a class="events__chip">Conferences & Workshops</a>
+        <a class="events__chip">Exhibitions</a>
+        <a class="events__chip">Sports & Outdoor</a>
+        <a class="events__chip">Food & Drinks</a>
+        <a class="events__chip">Nightlife</a>
+        <a class="events__chip events__chip_has-arrow">More</a>
       </div>
       <div class="events__founded-events">
         15 EVENTS FOUND ON SATURDAY AUGUST 9
@@ -149,9 +147,9 @@
       <div class="events__events-grid">
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/big-city-life.png" alt="">
+            <img class="event-card__img" src="/src/assets/big-city-life.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-favorit">
             <div class="event-card__date">JAN 11 TILL MAR 08</div>
             <div class="event-card__title">BIG CITY LIFE - Exhibition Opening</div>
             <div class="event-card__time">
@@ -162,14 +160,17 @@
               <div class="event-card__location-icon"></div>
               <div class="event-card__location-addr">Salon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon	</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/dar-el-nimer.png" alt="">
+            <img class="event-card__img" src="/src/assets/dar-el-nimer.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit  event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">Dar El-Nimer for Arts & Culture</div>
             <div class="event-card__time">
@@ -180,14 +181,17 @@
               <div class="event-card__location-icon"></div>
               <div class="event-card__location-addr">Salon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon	</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/the-other.png" alt="">
+            <img class="event-card__img" src="/src/assets/the-other.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit-plus">
+          <div class="event-card__data event-card__data_has-favorit  event-card__data_is-not-favorit-plus">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">The Other</div>
             <div class="event-card__time">
@@ -199,14 +203,17 @@
               <div class="event-card__location-addr">Sunflower - Douwar el Shams
                 Beirut, Lebanon 4011</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/the-other-2.png" alt="">
+            <img class="event-card__img" src="/src/assets/the-other-2.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-favorit-plus">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-favorit-plus">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">The Other</div>
             <div class="event-card__time">
@@ -218,14 +225,17 @@
               <div class="event-card__location-addr">Sunflower - Douwar el Shams
                 Beirut, Lebanon 4011</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/big-city-life.png" alt="">
+            <img class="event-card__img" src="/src/assets/big-city-life.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 11 TILL MAR 08</div>
             <div class="event-card__title">BIG CITY LIFE - Exhibition Opening</div>
             <div class="event-card__time">
@@ -236,14 +246,17 @@
               <div class="event-card__location-icon"></div>
               <div class="event-card__location-addr">Salon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon	</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/dar-el-nimer.png" alt="">
+            <img class="event-card__img" src="/src/assets/dar-el-nimer.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">Dar El-Nimer for Arts & Culture</div>
             <div class="event-card__time">
@@ -254,14 +267,17 @@
               <div class="event-card__location-icon"></div>
               <div class="event-card__location-addr">Salon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon	</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/the-other.png" alt="">
+            <img class="event-card__img" src="/src/assets/the-other.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">The Other</div>
             <div class="event-card__time">
@@ -273,14 +289,17 @@
               <div class="event-card__location-addr">Sunflower - Douwar el Shams
                 Beirut, Lebanon 4011</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/the-other-2.png" alt="">
+            <img class="event-card__img" src="/src/assets/the-other-2.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">The Other</div>
             <div class="event-card__time">
@@ -292,14 +311,17 @@
               <div class="event-card__location-addr">Sunflower - Douwar el Shams
                 Beirut, Lebanon 4011</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/big-city-life.png" alt="">
+            <img class="event-card__img" src="/src/assets/big-city-life.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 11 TILL MAR 08</div>
             <div class="event-card__title">BIG CITY LIFE - Exhibition Opening</div>
             <div class="event-card__time">
@@ -310,14 +332,17 @@
               <div class="event-card__location-icon"></div>
               <div class="event-card__location-addr">Salon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon	</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/dar-el-nimer.png" alt="">
+            <img class="event-card__img" src="/src/assets/dar-el-nimer.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">Dar El-Nimer for Arts & Culture</div>
             <div class="event-card__time">
@@ -328,14 +353,17 @@
               <div class="event-card__location-icon"></div>
               <div class="event-card__location-addr">Salon Beyrouth restaurant, Mohammed Abdel Baki street, Beirut, Lebanon	</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/the-other.png" alt="">
+            <img class="event-card__img" src="/src/assets/the-other.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">The Other</div>
             <div class="event-card__time">
@@ -347,14 +375,17 @@
               <div class="event-card__location-addr">Sunflower - Douwar el Shams
                 Beirut, Lebanon 4011</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
         <div class="event-card">
           <div class="event-card__img-container">
-            <img class="event-card__img" src="/src/assets/the-other-2.png" alt="">
+            <img class="event-card__img" src="/src/assets/the-other-2.svg" alt="">
           </div>
-          <div class="event-card__data event-card__data_is-not-favorit">
+          <div class="event-card__data event-card__data_has-favorit event-card__data_is-not-favorit">
             <div class="event-card__date">JAN 10 TILL JAN 27</div>
             <div class="event-card__title">The Other</div>
             <div class="event-card__time">
@@ -366,7 +397,10 @@
               <div class="event-card__location-addr">Sunflower - Douwar el Shams
                 Beirut, Lebanon 4011</div>
             </div>
-            <div class="event-card__event-types"># Arts & Culture    #Conferences & Workshops</div>
+            <div class="event-card__event-types">
+              <div class="event-card__event-type"># Arts & Culture</div>
+              <div class="event-card__event-type">#Conferences & Workshops</div>
+            </div>
           </div>
         </div>
       </div>
@@ -381,22 +415,22 @@
     </div>
     <div class="footer__social-media">
       <div class="social-media-icon">
-        <img src="/src/assets/big-facebook-icon.png" alt="" class="social-media-icon__img">
+        <img src="/src/assets/big-facebook-icon.svg" alt="" class="social-media-icon__img">
       </div>
       <div class="social-media-icon">
-        <img src="/src/assets/instgram-icon.png" alt="" class="social-media-icon__img">
+        <img src="/src/assets/instgram-icon.svg" alt="" class="social-media-icon__img">
       </div>
       <div class="social-media-icon">
-        <img src="/src/assets/twitter-icon.png" alt="" class="social-media-icon__img">
+        <img src="/src/assets/twitter-icon.svg" alt="" class="social-media-icon__img">
       </div>
       <div class="social-media-icon">
-        <img src="/src/assets/youtube-icon.png" alt="" class="social-media-icon__img">
+        <img src="/src/assets/youtube-icon.svg" alt="" class="social-media-icon__img">
       </div>
       <div class="social-media-icon">
-        <img src="/src/assets/google-plus-icon.png" alt="" class="social-media-icon__img">
+        <img src="/src/assets/google-plus-icon.svg" alt="" class="social-media-icon__img">
       </div>
       <div class="social-media-icon">
-        <img src="/src/assets/linked-in-icon.png" alt="" class="social-media-icon__img">
+        <img src="/src/assets/linked-in-icon.svg" alt="" class="social-media-icon__img">
       </div>
     </div>
     <div class="footer__right-bar">

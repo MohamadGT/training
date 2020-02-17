@@ -21,7 +21,7 @@
   justify-self: center;
   width: 7px;
   height: 12px;
-  background-image: url('/src/assets/left-arrow.png');
+  background-image: url('/src/assets/left-arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -30,7 +30,7 @@
   justify-self: center;
   width: 7px;
   height: 12px;
-  background-image: url('/src/assets/right-arrow.png');
+  background-image: url('/src/assets/right-arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -50,13 +50,11 @@
   color: #fff;
   font-size: 13px;
   text-transform: uppercase;
-  font-family: 'Montserrat';
 }
 
 .calendar-tab__year {
   color: #fff;
   font-size: 10px;
-  font-family: 'Montserrat';
 }
 
 .calendar-tab__day-of-month {
@@ -72,12 +70,10 @@
 
 .calendar-tab__day {
   font-size: 13px;
-  font-family: 'Montserrat';
 }
 
 .calendar-tab__day-of-week {
   font-size: 10px;
-  font-family: 'Montserrat';
   text-transform: uppercase;
 }
 
@@ -87,11 +83,11 @@
   cursor: pointer;
 }
 
-.calendar-tab__day-of-month_favorit {
+.calendar-tab__day-of-month_is-favorit {
  position: relative; 
 }
 
-.calendar-tab__day-of-month_favorit::before {
+.calendar-tab__day-of-month_is-favorit::before {
   content: '';
   position: absolute;
   top: 0;
@@ -116,7 +112,7 @@
 .calendar-tab__search-icon {
   width: 24px;
   height: 24px;
-  background-image: url('/src/assets/search-icon.png');
+  background-image: url('/src/assets/search-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -127,14 +123,12 @@
   border: transparent 0px solid;
   font-size: 12px;
   color: #fff;
-  font-family: 'Montserrat';
   outline: none;
 }
 
 .calendar-tab__search-input::placeholder {
   font-size: 12px;
   color: #fff;
-  font-family: 'Montserrat';
   opacity: .7;
 }
 

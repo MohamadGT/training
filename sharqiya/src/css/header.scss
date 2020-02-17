@@ -11,9 +11,9 @@
 }
 
 .header__logo {
-  width: 110px;
+  width: 120px;
   height: 42px;
-  background-image: url('/src/assets/sharqiya-logo.png');
+  background-image: url('/src/assets/sharqiya-logo.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -28,20 +28,29 @@
 .header__burger-menu-button {
   width: 24px;
   height: 24px;
-  background-image: url('/src/assets/burger-icon.png');
+  background-image: url('/src/assets/burger-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .header__date {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
   margin-left: 22px;
 }
 
 .header__browse-event {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
   margin-left: 30px;
 }
 
 .header__location {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 12px;
   margin-left: 26px;
   border-bottom: solid 1px #707070;
 }
@@ -55,7 +64,6 @@
 
 .header__login {
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 12px;
   margin-right: 28px;
@@ -68,6 +76,9 @@
   align-items: center;
   width: 120px;
   height: 36px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
   background-color: #F8A62B;
   border: solid 1px #95989A;
   border-radius: 5px;
@@ -80,13 +91,6 @@
   color: #fff;
   font-size: 14px;
   text-decoration: none;
-}
-
-.header_font-family_montserrat {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: capitalize;
-  color: #fff;
-  font-size: 12px;
 }
 
 @media (max-width: 749px) {
@@ -130,7 +134,7 @@
   .header__location-icon {
     width: 13px;
     height: 19px;
-    background-image: url('/src/assets/location-icon-mobile.png');
+    background-image: url('/src/assets/location-icon-mobile.svg');
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 20px;
@@ -139,7 +143,7 @@
   .header__search-icon {
     width: 20px;
     height: 20px;
-    background-image: url('/src/assets/search-icon-mobile.png');
+    background-image: url('/src/assets/search-icon-mobile.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
