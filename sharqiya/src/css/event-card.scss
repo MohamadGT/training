@@ -3,6 +3,12 @@
   width: 298px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, .16) 0px 3px;
+  cursor: pointer;
+  transition-duration: .5s;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, .16) 5px 15px 10px;
+  }
 }
 
 .event-card__img-container {

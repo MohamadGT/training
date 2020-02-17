@@ -31,6 +31,10 @@
   flex-shrink: 0;
 }
 
+.events__chip:hover {
+  color: #F8A62B;
+}
+
 .events__chip_highlighted {
   background-color: #F8A62B;
   color: #fff;

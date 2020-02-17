@@ -16,6 +16,7 @@
   background-image: url('/src/assets/sharqiya-logo.svg');
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .header__left-bar {
@@ -31,6 +32,7 @@
   background-image: url('/src/assets/burger-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .header__date {
@@ -38,6 +40,10 @@
   color: #fff;
   font-size: 12px;
   margin-left: 22px;
+  cursor: pointer;
+  &:hover {
+    color: #F8A62B;
+  }
 }
 
 .header__browse-event {
@@ -45,6 +51,10 @@
   color: #fff;
   font-size: 12px;
   margin-left: 30px;
+  cursor: pointer;
+  &:hover {
+    color: #F8A62B;
+  }
 }
 
 .header__location {
@@ -53,6 +63,10 @@
   font-size: 12px;
   margin-left: 26px;
   border-bottom: solid 1px #707070;
+  cursor: pointer;
+  &:hover {
+    color: #F8A62B;
+  }
 }
 
 .header__right-bar {
@@ -68,6 +82,9 @@
   font-size: 12px;
   margin-right: 28px;
   text-decoration: none;
+  &:hover {
+    color: #F8A62B;
+  }
 }
 
 .header__add-event {
@@ -83,6 +100,10 @@
   border: solid 1px #95989A;
   border-radius: 5px;
   margin-right: 28px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(243, 155, 22);
+  }
 }
 
 .header__language {
@@ -91,6 +112,9 @@
   color: #fff;
   font-size: 14px;
   text-decoration: none;
+  &:hover {
+    color: #F8A62B;
+  }
 }
 
 @media (max-width: 749px) {
