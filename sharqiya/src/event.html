@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Events, Events in EL Sharqiya">
   <title>Sharqiya</title>
 </head>
 <body>
@@ -33,17 +34,17 @@
     </a>
     <div class="sub-header__event-title">Night</div>
   </div>
-  <article class="event-details">
+  <article class="event-details" itemscope itemtype="http://schema.org/Event">
     <div class="event-details__left">
-      <div class="event-details__title">Night - ليل</div>
+      <div class="event-details__title" itemprop="name">Night - ليل</div>
       <div class="event-details__date-bar">
         <div class="date-icon">
           <div class="date-icon__month">aug</div>
           <div class="date-icon__day">10</div>
         </div>
         <div class="date-time-info">
-          <div class="date-time-info__date">Tuesday Aug 10 2016</div>
-          <div class="date-time-info__times">09:00 am till 05:00 pm</div>
+          <div class="date-time-info__date" itemprop="date">Tuesday Aug 10 2016</div>
+          <div class="date-time-info__times" itemprop="time">09:00 am till 05:00 pm</div>
         </div>
         <div class="event-details__heart-button"></div>
         <div class="event-details__link-to">
@@ -60,7 +61,10 @@
       </div>
       <div class="event-details__location">
         <div class="event-details__location-icon"></div>
-        <div class="event-details__location-addr">Beirut Digital District, Bachoura, Beirut</div>
+        <div class="event-details__location-addr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">Beirut Digital District, Bachoura</span>, 
+          <span itemprop="addressLocality">Beirut</span>
+        </div>
         <div class="event-details__link-to">
           <div class="link-to">
             <a class="link-to__link-text" href="">Show map</a>
@@ -90,7 +94,7 @@
           <div class="event-details__event-type"># Arts & Culture</div>
           <div class="event-details__event-type">#Conferences & Workshops</div>
         </div>
-        <p class="event-details__event-text">
+        <p class="event-details__event-text" itemprop="description">
           A dance performance by Ali Chahrour</br>
 January 24 to 27, 2019 - Al Madina Theatre, Beirut</br></br>
 
@@ -104,7 +108,7 @@ Directed and choreographed by: Ali Chahrour / Performed by: Hala Omran, Aya Metw
 
 Text adaptation by: Hala Omran and Junaid Sarieddine / Light design and technical director: Guillaume Tesson / Sound design: Khyam Allami / Costumes: Ahmed Amer / Stage manager and Assistant Director: Haera Slim / Production Manager: Christel Salem and Haera Slim / Graphic design and Communications: be:kult / Poster and brochure photography.
         </p>
-        <div class="event-details__event-link">
+        <div class="event-details__event-link" itemprop="url">
           www.facebook.com/Human-Lie-Detection-547…
         </div>
       </div>
