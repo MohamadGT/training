@@ -1,7 +1,7 @@
 .event-card {
   display: grid;
   width: 298px;
-  background-color: #fff;
+  background-color: #FFF;
   box-shadow: rgba(0, 0, 0, .16) 0px 3px;
   cursor: pointer;
   transition-duration: .5s;
@@ -15,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   width: 100%;
   height: 100%;
 }
@@ -25,9 +24,7 @@
 }
 
 .event-card__img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%
+  width: 100%;
 }
 
 .event-card__data {
@@ -35,11 +32,11 @@
   box-sizing: border-box;
 }
 
-.event-card__data_has-favorit {
+.event-card__data_has-favorite {
   position: relative;
 }
 
-.event-card__data_has-favorit::before {
+.event-card__data_has-favorite::before {
   position: absolute;
   content: '';
   top: 0;
@@ -54,40 +51,40 @@
   background-size: 18px;
 }
 
-.event-card__data_is-not-favorit {
+.event-card__data_is-not-favorite {
   position: relative;
 }
 
-.event-card__data_is-not-favorit::before {
-  background-color: #fff;
-  background-image: url('/src/assets/favorit-card-icon.svg');
+.event-card__data_is-not-favorite::before {
+  background-color: #FFF;
+  background-image: url('/src/assets/favorite-card-icon.svg');
 }
 
-.event-card__data_is-favorit {
+.event-card__data_is-favorite {
   position: relative;
 }
 
-.event-card__data_is-favorit::before {
+.event-card__data_is-favorite::before {
   background-color: #F8A62B;
-  background-image: url('/src/assets/checked-favorit-icon.svg');
+  background-image: url('/src/assets/checked-favorite-icon.svg');
 }
 
-.event-card__data_is-not-favorit-plus {
+.event-card__data_is-not-favorite-plus {
   position: relative;
 }
 
-.event-card__data_is-not-favorit-plus::before {
-  background-color: #fff;
-  background-image: url('/src/assets/favorit-plus-icon.svg');
+.event-card__data_is-not-favorite-plus::before {
+  background-color: #FFF;
+  background-image: url('/src/assets/favorite-plus-icon.svg');
 }
 
-.event-card__data_is-favorit-plus {
+.event-card__data_is-favorite-plus {
   position: relative;
 }
 
-.event-card__data_is-favorit-plus::before {
+.event-card__data_is-favorite-plus::before {
   background-color: #F8A62B;
-  background-image: url('/src/assets/checked-favorit-plus-icon.svg');
+  background-image: url('/src/assets/checked-favorite-plus-icon.svg');
 }
 
 .event-card__date {
@@ -114,9 +111,7 @@
 .event-card__time-icon {
   width: 10px;
   height: 10px;
-  background-image: url('/src/assets/event-card-time-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/event-card-time-icon.svg') no-repeat center;
 }
 
 .event-card__time-from-to {
@@ -135,9 +130,7 @@
   padding-left: 5px;
   width: 8px;
   height: 11px;
-  background-image: url('/src/assets/event-card-location-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/event-card-location-icon.svg') no-repeat center;
 }
 
 .event-card__location-addr {
@@ -160,6 +153,6 @@
 
 @media (max-width: 749px) {
   .event-card {
-    width: 348px;
+    width: 100%;
   }
 }

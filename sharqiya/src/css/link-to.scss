@@ -20,12 +20,10 @@
   margin-left: 20px;
   width: 6px;
   height: 9px;
-  background-image: url('/src/assets/arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/arrow.svg') no-repeat center;
 }
 
-@media (max-width: 749px) { 
+@media (max-width: 1023px) { 
   .link-to__link-short-text {
     display: block;
   }
@@ -34,7 +32,7 @@
   }
 }
 
-@media (min-width: 750px) { 
+@media (min-width: 1024px) { 
   .link-to__link-short-text {
     display: none;
   }

@@ -21,7 +21,7 @@
 }
 
 .footer__polices {
-  color: #fff;
+  color: #FFF;
   font-size: 13px;
   cursor: pointer;
 }
@@ -34,12 +34,14 @@
 }
 
 .footer__copy-rights {
-  color: #fff;
+  color: #FFF;
   font-size: 12px;
 }
 
 @media (max-width: 749px) {
  .footer {
-   display: none;
- } 
+   height: 150px;
+   flex-direction: column;
+   justify-content: space-around;
+ }
 }

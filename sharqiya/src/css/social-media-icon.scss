@@ -1,27 +1,46 @@
 .social-media-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  border: solid 1px #fff;
-  border-radius: 50%;
   cursor: pointer;
+  width: 34px;
+  height: 34px;
 }
 
-.social-media-icon_color-gray {
-  background-color: #9C9C9C;
+.social-media-icon_is-filled-email {
+  background: url('/src/assets/filled-email-icon.svg') no-repeat center;
 }
 
-.social-media-icon_color-sky {
-  background-color: #43BDEF;
+.social-media-icon_is-filled-twitter {
+  background: url('/src/assets/filled-twitter-icon.svg') no-repeat center;
 }
 
-.social-media-icon_color-green {
-  background-color: #23B180;
+.social-media-icon_is-filled-whatsapp {
+  background: url('/src/assets/fillled-whatsapp-icon.svg') no-repeat center;
 }
 
-.social-media-icon_color-blue {
-  background-color: #6081C4;
+.social-media-icon_is-filled-facebook {
+  background: url('/src/assets/filled-facebook-icon.svg') no-repeat center;
 }
 
+
+.social-media-icon_is-facebook {
+  background: url('/src/assets/facebook-icon.svg') no-repeat center;
+}
+
+.social-media-icon_is-instagram {
+  background: url('/src/assets/instagram-icon.svg') no-repeat center;
+}
+
+.social-media-icon_is-twitter {
+  background: url('/src/assets/twitter-icon.svg') no-repeat center;
+}
+
+.social-media-icon_is-youtube {
+  background: url('/src/assets/youtube-icon.svg') no-repeat center;
+}
+
+.social-media-icon_is-google-plus {
+  background: url('/src/assets/google-plus-icon.svg') no-repeat center;
+}
+
+.social-media-icon_is-linkedin {
+  background: url('/src/assets/linkedin-icon.svg') no-repeat center;
+}

@@ -7,6 +7,7 @@
   max-width: 1282px;
   height: 50px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .calendar-tab__calendar {
@@ -15,24 +16,21 @@
   align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
+  height: 65px;
 }
 
 .calendar-tab__left-arrow {
   justify-self: center;
   width: 7px;
   height: 12px;
-  background-image: url('/src/assets/left-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/left-arrow.svg') no-repeat center;
 }
 
 .calendar-tab__right-arrow {
   justify-self: center;
   width: 7px;
   height: 12px;
-  background-image: url('/src/assets/right-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/right-arrow.svg') no-repeat center;
 }
 
 .calendar-tab__month-of-year {
@@ -47,18 +45,18 @@
 }
 
 .calendar-tab__month {
-  color: #fff;
+  color: #FFF;
   font-size: 13px;
   text-transform: uppercase;
 }
 
 .calendar-tab__year {
-  color: #fff;
+  color: #FFF;
   font-size: 10px;
 }
 
 .calendar-tab__day-of-month {
-  color: #fff;
+  color: #FFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,11 +81,11 @@
   cursor: pointer;
 }
 
-.calendar-tab__day-of-month_is-favorit {
+.calendar-tab__day-of-month_is-favorite {
  position: relative; 
 }
 
-.calendar-tab__day-of-month_is-favorit::before {
+.calendar-tab__day-of-month_is-favorite::before {
   content: '';
   position: absolute;
   top: 0;
@@ -112,9 +110,7 @@
 .calendar-tab__search-icon {
   width: 24px;
   height: 24px;
-  background-image: url('/src/assets/search-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/search-icon.svg') no-repeat center;
 }
 
 .calendar-tab__search-input {
@@ -122,13 +118,13 @@
   background-color: transparent;
   border: transparent 0px solid;
   font-size: 12px;
-  color: #fff;
+  color: #FFF;
   outline: none;
 }
 
 .calendar-tab__search-input::placeholder {
   font-size: 12px;
-  color: #fff;
+  color: #FFF;
   opacity: .7;
 }
 
@@ -138,11 +134,4 @@
   .calendar-tab__search {
     display: none;
   }
-}
-
-@media (min-width: 750px) and (max-width: 1023px) {
-
-}
-
-@media (min-width: 1024px) {
 }

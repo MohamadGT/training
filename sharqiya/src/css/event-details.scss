@@ -5,7 +5,6 @@
   max-width: 1282px;
   margin: 0 auto;
   grid-template-areas: "data image";
-  padding: 0 14px;
 }
 
 .event-details__left {
@@ -33,18 +32,15 @@
 .event-details__heart-button {
   width: 35px;
   height: 35px;
-  background-image: url('/src/assets/heart-button.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/heart-button.svg') no-repeat center;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .event-details__share-button {
   width: 35px;
   height: 35px;
-  background-image: url('/src/assets/share.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/share.svg') no-repeat center;
   margin-left: 10px;
 }
 
@@ -68,13 +64,7 @@
   padding-left: 11px;
   width: 10px;
   height: 10px;
-  background-image: url('/src/assets/small-heart.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.separator {
-  display: none;
+  background: url('/src/assets/small-heart.svg') no-repeat center;
 }
 
 .event-details__number-saved-dates {
@@ -96,9 +86,7 @@
 .event-details__location-icon {
   width: 10px;
   height: 10px;
-  background-image: url('/src/assets/location.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/location.svg') no-repeat center;
   padding-left: 11px;
 }
 
@@ -155,17 +143,13 @@
 }
 
 .event-details__event-img-container {
-  // width: 600px;
-  height: 340px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .event-details__event-img {
-  max-width: 100%;
-  margin: auto;
+  width: 100%;
 }
 
 
@@ -173,7 +157,6 @@
   .event-details {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 1px 34px 10px;
     margin: 0 auto;
     grid-template-areas: "image"
                          "data";
@@ -184,6 +167,7 @@
 
   .event-details__left {
     border: transparent;
+    padding: 1px 34px 10px;
   }
 
   .event-details__event-img-container {
@@ -192,24 +176,19 @@
 
   .event-details__date-bar .event-details__heart-button,
   .event-details__location .event-details__link-to,
-  .event-details__saved-dates,
-  .social-media-icon {
+  .event-details__saved-dates {
     display: none;
   }
 
   .event-details__social-media {
     display: grid;
-    grid-template-columns: 32px 35px 20px 40px 35px;
+    grid-template-columns: 32px 55px 40px 35px;
     column-gap: 10px;
     align-items: center;
     justify-items: start;
     padding-top: 20px;
     padding-bottom: 14px;
     border-bottom: 1px solid #E6E6E6;
-  }
-
-  .separator {
-    display: block;
   }
 
   .event-details__location-icon {
@@ -223,6 +202,10 @@
   .event-details__social-media .event-details__share-button {
     display: none;
   }
+
+  .event-details {
+    padding: 0 14px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -230,5 +213,9 @@
   .event-details__social-media .saves,
   .event-details__social-media .event-details__share-button {
     display: none;
+  }
+
+  .event-details {
+    padding: 0 14px;
   }
 }

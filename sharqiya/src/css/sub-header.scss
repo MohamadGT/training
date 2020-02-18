@@ -3,7 +3,6 @@
   align-items: center;
   height: 50px;
   max-width: 1282px;
-  /* border-bottom: 1px solid rgba(230, 230, 230, .4); */
   margin: 0 auto;
   padding: 0 14px;
 }
@@ -20,9 +19,7 @@
   display: inline-block;
   width: 6px;
   height: 9px;
-  background-image: url('/src/assets/left-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url('/src/assets/back-arrow.svg') no-repeat center;
 }
 
 @media (max-width: 749px) {
@@ -45,7 +42,7 @@
   .sub-header__event-title {
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: #FFF;
     flex: 1;
     text-align: center;
   }
