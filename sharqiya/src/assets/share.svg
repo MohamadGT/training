@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="Group_6518" data-name="Group 6518" transform="translate(-93 -291)">
+    <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(93 291)" fill="#fff" stroke="#eb930f" stroke-width="1">
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="none"/>
+      <circle cx="17.5" cy="17.5" r="17" fill="none"/>
+    </g>
+    <g id="Group_6517" data-name="Group 6517" transform="translate(95.668 394.75)">
+      <path id="Path_21970" data-name="Path 21970" d="M15.847-91.414v6.546a.681.681,0,0,1-.683.682.683.683,0,0,1-.683-.682v-6.549l-.771.772a.679.679,0,0,1-.962,0,.684.684,0,0,1,0-.962l1.941-1.941a.67.67,0,0,1,.477-.2l.005,0a.674.674,0,0,1,.476.2l1.941,1.941a.679.679,0,0,1,0,.962.684.684,0,0,1-.962,0ZM9.7-81.111H20.629V-85.9a.68.68,0,0,1,.683-.68A.683.683,0,0,1,22-85.9v5.472a.677.677,0,0,1-.2.48.685.685,0,0,1-.484.2H9.015a.68.68,0,0,1-.482-.2.683.683,0,0,1-.2-.482V-85.9a.68.68,0,0,1,.683-.68.683.683,0,0,1,.683.68Z" fill="#eb930f" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+.date-time-info {
+  display: grid;
+  padding: 5px 10px;
+}
+
+.date-time-info__date {
+  font-size: 14px;
+  color: #727272;
+  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.date-time-info__times {
+  font-size: 13px;
+  color: #727272;
+  font-family: 'Roboto Slab', sans-serif;
+}

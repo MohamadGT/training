@@ -1,0 +1,19 @@
+.date-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  background-color: #F8A62B;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.date-icon__month {
+  font-size: 9px;
+}
+
+.date-icon__day {
+  font-size: 22px;
+}

@@ -1,0 +1,213 @@
+.event-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 34px;
+  max-width: 1282px;
+  margin: 0 auto;
+  grid-template-areas: "data image";
+}
+
+.event-details__left {
+  display: flex;
+  grid-area: data;
+  flex-direction: column;
+  padding-right: 28px;
+  border-right: 1px solid #E6E6E6;
+}
+
+.event-details__title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.event-details__date-bar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E6E6E6;
+  margin-top: 20px;
+}
+
+.event-details__heart-button {
+  width: 35px;
+  height: 35px;
+  background: url('/src/assets/heart-button.svg') no-repeat center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.event-details__share-button {
+  width: 35px;
+  height: 35px;
+  background: url('/src/assets/share.svg') no-repeat center;
+  margin-left: 10px;
+}
+
+.event-details__link-to {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.event-details__saved-dates {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #E6E6E6;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.event-details__saved-dates-heart {
+  padding-left: 11px;
+  width: 10px;
+  height: 10px;
+  background: url('/src/assets/small-heart.svg') no-repeat center;
+}
+
+.event-details__number-saved-dates {
+  color: #727272;
+  font-weight: bold;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.event-details__location {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #E6E6E6;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.event-details__location-icon {
+  width: 10px;
+  height: 10px;
+  background: url('/src/assets/location.svg') no-repeat center;
+  padding-left: 11px;
+}
+
+.event-details__location-addr {
+  color: #727272;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.event-details__social-media {
+  display: grid;
+  grid-template-columns: 45px repeat(4, 32px);
+  column-gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.event-details__description {
+  display: grid;
+  row-gap: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.event-details__event-types {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.event-details__event-type {
+  margin-right: 10px;
+  color: #F8A62B;
+  font-size: 11px;
+}
+
+.event-details__event-text {
+  font-size: 16px;
+  color: #404040;
+}
+
+.event-details__event-link {
+  font-size: 11px;
+  color: #F8A62B;
+}
+
+.event-details__right {
+  grid-area: image;
+  padding-left: 28px;
+}
+
+.event-details__event-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-details__event-img {
+  width: 100%;
+}
+
+@media (max-width: 749px) {
+  .event-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    grid-template-areas: "image"
+                         "data";
+  }
+
+  .event-details__right {
+    padding: 0;
+  }
+
+  .event-details__left {
+    border: transparent;
+    padding: 1px 34px 10px;
+  }
+
+  .event-details__title {
+    padding-top: 10px;
+  }
+
+  .event-details__event-img-container {
+    width: 100%;
+  }
+
+  .event-details__date-bar .event-details__heart-button,
+  .event-details__location .event-details__link-to,
+  .event-details__saved-dates {
+    display: none;
+  }
+
+  .event-details__social-media {
+    display: grid;
+    grid-template-columns: 32px 55px 40px 35px;
+    column-gap: 10px;
+    align-items: center;
+    justify-items: start;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #E6E6E6;
+  }
+
+  .event-details__location-icon {
+    background-image: url('/src/assets/location-icon.svg');
+  }
+}
+
+@media (min-width: 750px) {
+  .event-details__social-media .event-details__heart-button,
+  .event-details__social-media .saves,
+  .event-details__social-media .event-details__share-button {
+    display: none;
+  }
+
+  .event-details {
+    padding: 0 14px;
+  }
+}

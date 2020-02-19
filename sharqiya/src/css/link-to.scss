@@ -1,0 +1,42 @@
+.link-to {
+  display: flex;
+  align-items: center;
+}
+
+.link-to__link-text {
+  color: #EB930F;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.link-to__link-short-text {
+  color: #EB930F;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.link-to__arrow {
+  margin-left: 20px;
+  width: 6px;
+  height: 9px;
+  background: url('/src/assets/arrow.svg') no-repeat center;
+}
+
+@media (max-width: 1023px) { 
+  .link-to__link-short-text {
+    display: block;
+  }
+  .link-to__link-text {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) { 
+  .link-to__link-short-text {
+    display: none;
+  }
+  .link-to__link-text {
+    display: block;
+  }
+}

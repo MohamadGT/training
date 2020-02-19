@@ -1,0 +1,20 @@
+.saves {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 34px;
+  text-transform: uppercase;
+  color: #727272;
+  font-family: 'Roboto Slab';
+}
+
+.saves__number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.saves__label {
+  font-size: 10px;
+}
