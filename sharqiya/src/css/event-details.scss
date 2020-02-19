@@ -122,7 +122,7 @@
 }
 
 .event-details__event-type {
-  margin-left: 10px;
+  margin-right: 10px;
   color: #F8A62B;
   font-size: 11px;
 }
@@ -160,6 +160,7 @@
     grid-template-areas: "image"
                          "data";
   }
+
   .event-details__right {
     padding: 0;
   }
@@ -167,6 +168,10 @@
   .event-details__left {
     border: transparent;
     padding: 1px 34px 10px;
+  }
+
+  .event-details__title {
+    padding-top: 10px;
   }
 
   .event-details__event-img-container {

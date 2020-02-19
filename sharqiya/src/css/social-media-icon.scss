@@ -6,6 +6,12 @@
   background-repeat: no-repeat;
 }
 
+.social-media-icon_is-hidden {
+  @media (max-width: 749px) {
+    display: none;
+  }
+}
+
 .social-media-icon_is-filled-email {
   background-image: url('/src/assets/filled-email-icon.svg');
 }
