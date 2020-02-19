@@ -6,12 +6,9 @@
 
 .related-events__container {
   height: 475px;
-  width: 100%;
   max-width: 1282px;
   margin: 0 auto;
   background-color: #F0F0F0;
-  padding: 14px;
-  box-sizing: border-box;
 }
 
 .related-event__title {
@@ -22,7 +19,7 @@
 
 .related-event__events {
   display: grid;
-  margin: 24px auto;
+  margin: 40px auto;
   gap: 30px;
 }
 
@@ -31,14 +28,10 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     max-width: 400px;
-  }
 
-  .related-event__events > * {
-    display: none;
-  }
-
-  .related-event__events > *:first-child {
-    display: block;
+    .event-card:not(:first-child) {
+      display: none;
+    }
   }
 }
 
@@ -47,10 +40,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     width: 626px;
-  }
 
-  .related-event__events > *:nth-child(n+3) {
-    display: none;
+    .event-card:nth-child(n+3) {
+      display: none;
+    }
   }
 }
 
@@ -59,10 +52,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     width: 954px;
-  }
 
-  .related-event__events > *:nth-child(n+4) {
-    display: none;
+    .event-card:nth-child(n+4) {
+      display: none;
+    }
   }
 }
 

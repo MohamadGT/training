@@ -152,7 +152,6 @@
   width: 100%;
 }
 
-
 @media (max-width: 749px) {
   .event-details {
     display: grid;
@@ -196,19 +195,7 @@
   }
 }
 
-@media (min-width: 750px) and (max-width: 1023px) {
-  .event-details__social-media .event-details__heart-button,
-  .event-details__social-media .saves,
-  .event-details__social-media .event-details__share-button {
-    display: none;
-  }
-
-  .event-details {
-    padding: 0 14px;
-  }
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 750px) {
   .event-details__social-media .event-details__heart-button,
   .event-details__social-media .saves,
   .event-details__social-media .event-details__share-button {
